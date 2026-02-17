@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intermediate HTML, CSS & JavaScript</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- Navigation (Flexbox) -->
+    <nav class="navbar">
+        <h2>Task - 2</h2>
+        <ul>
+            <li><a href="#form">Contact</a></li>
+            <li><a href="#todo">To-Do</a></li>
+        </ul>
+    </nav>
+
+    <!-- Responsive Grid Layout -->
+    <div class="container">
+
+        <!-- Contact Form Section -->
+        <section id="form" class="card">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label>Message</label>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+
+                <button type="submit">Submit</button>
+
+                <p id="formMessage"></p>
+            </form>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section id="todo" class="card">
+            <h2>Dynamic To-Do List</h2>
+
+            <div class="todo-input">
+                <input type="text" id="taskInput" placeholder="Enter new task">
+                <button onclick="addTask()">Add</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </section>
+
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
